@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">KylesMusicReviewsApp</string>
     <string name="action_settings">Settings</string>
+    <string name="album_artwork">Album Artwork</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="album_name">Album Name</string>
+    <string name="rating">Rating</string>
 </resources>
