@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
             .build()
         findViewById<Toolbar>(R.id.toolbar)
             .setupWithNavController(navController, appBarConfiguration)
+
+        // TODO navigate with actions when clicking on nav drawer options
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
