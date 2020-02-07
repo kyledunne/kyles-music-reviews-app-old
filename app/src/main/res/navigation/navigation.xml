@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/musicHomeScreenFragment">
+    <fragment
+        android:id="@+id/golfHomeScreenFragment"
+        android:name="me.kyledunne.kylesmusicreviewsapp.GolfHomeScreenFragment"
+        android:label="fragment_golf_home_screen"
+        tools:layout="@layout/fragment_golf_home_screen" >
+        <action
+            android:id="@+id/action_golfHomeScreenFragment_to_musicHomeScreenFragment"
+            app:destination="@id/musicHomeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicHomeScreenFragment"
+        android:name="me.kyledunne.kylesmusicreviewsapp.MusicHomeScreenFragment"
+        android:label="fragment_music_home_screen"
+        tools:layout="@layout/fragment_music_home_screen" >
+        <action
+            android:id="@+id/action_musicHomeScreenFragment_to_golfHomeScreenFragment"
+            app:destination="@id/golfHomeScreenFragment" />
+    </fragment>
+</navigation>
